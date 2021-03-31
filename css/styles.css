@@ -1,0 +1,124 @@
+.navbar .nav-logo, .navbar .nav-menu, .navbar .nav-menu .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem calc((100 - 1200) / 2);
+  z-index: 10;
+  position: relative;
+}
+
+.navbar .nav-logo {
+  margin-left: 24px;
+}
+
+.navbar .nav-head {
+  text-decoration: underline;
+  margin-left: 24px;
+}
+
+.navbar .nav-menu {
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+
+.navbar .nav-menu .nav-links {
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  border: white solid 1px;
+  margin: 5px;
+}
+
+.navbar .nav-menu .nav-links:hover {
+  background-color: #E3913E;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+  background-color: #0d0d0d;
+}
+
+.main .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
+.main .container .container-left {
+  width: 100%;
+  line-height: 1.2;
+}
+
+.main .container .container-left h2 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.main .container .container-left p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-top: 1rem;
+}
+
+.main .container .container-right {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 1rem;
+}
+
+.main .container .container-right .portrait {
+  margin-top: 40px;
+  height: 600px;
+}
+
+.main .container .container-right img {
+  height: 90%;
+  width: auto;
+}
+/*# sourceMappingURL=styles.css.map */

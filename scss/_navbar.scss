@@ -1,0 +1,47 @@
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background: $primary-color;
+    color: $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100 - 1200) / 2);
+    z-index: 10;
+    position: relative;
+
+
+    .nav-logo {
+        @extend %align-center;
+        margin-left: 24px;
+    }
+
+    .nav-head {
+        text-decoration: underline;
+        margin-left: 24px;
+    }
+
+    .nav-menu {
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+
+        .nav-links {
+            @extend %align-center;
+            color: $secondary-color;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 1rem;
+            border: $secondary-color solid 1px;
+            margin: 5px;
+
+            &:hover {
+                background-color: $tertiary-color;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}
